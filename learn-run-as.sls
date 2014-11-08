@@ -56,7 +56,7 @@ huhu2:
     - contents: 'whoami > /apps/magni/learn-run-as.txt'
     # also / in Windows
 
-silly-run-as-1-of-3:
+learn-run-as-1-of-3:
   cmd.run:
     # /RU Run user -- WARNING: you must escape the backslash between domain and username
     # /RP password
@@ -65,12 +65,12 @@ silly-run-as-1-of-3:
     # /SD and /ST some date in the far future to prevent a warning or a run
     - name: "SCHTASKS /create /RU MBOX\\markus /RP m /tn saltsch /tr c:/apps/magni/learn-run-as.bat /SC ONCE /SD 01.01.2500 /ST 12:00"
 
-silly-run-as-2-of-3:
+learn-run-as-2-of-3:
   cmd.run:
     # actually run
     - name: "SCHTASKS /run /tn saltsch"
 
-silly-run-as-3-of-3:
+learn-run-as-3-of-3:
   cmd.run:
     # remove the scheduled task
     - name: "SCHTASKS /delete /tn saltsch /F"
