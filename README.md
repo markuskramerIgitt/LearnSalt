@@ -1,8 +1,14 @@
-LearnSalt
-=========
-I learn Salt.
+File /srv/salt/top.sls contains
 
-learn-unless
+base:
+  '*':
+    - LearnSalt/learn-run-as
+    - LearnSalt/learn-unless
 
-learn-run-as
+
+---------------
+
+git add ...
+git commit ...
+git push ...
 
