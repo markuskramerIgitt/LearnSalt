@@ -1,6 +1,5 @@
 Learn Salt
 ====
-Oh Mann
 
 On Windows, how do I tell that the salt-minion is running?
  - Look for a process called salt-minion.exe run by SYSTEM
