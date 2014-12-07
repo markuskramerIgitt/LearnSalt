@@ -2,8 +2,8 @@ Learn Salt
 ====
 
 On Windows, how do I tell that the salt-minion is running?
-Look for a process called salt-minion.exe run by SYSTEM
-Look for a service called salt-minion
+ - Look for a process called salt-minion.exe run by SYSTEM
+ - Look for a service called salt-minion
 
 
 
