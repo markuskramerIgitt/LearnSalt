@@ -1,5 +1,7 @@
 ###
-### WARNING: requires c:/apps/magni directory on Windows
+###  This file is stored on   /srv/salt    on the server
+### 
+###  Requires    c:/apps/magni    directory on Windows
 ###
 ###
 
