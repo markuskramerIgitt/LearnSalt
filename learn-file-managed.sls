@@ -10,8 +10,8 @@
 {% if grains['os'] == 'Windows' %}
 
 /apps/magni/learn_file_managed_example.txt:
-  file.managed
-   - source: salt://srv/salt/LearnSalt/LearnSalt/learn-file.managed.txt
+  file.managed:
+    - source: salt://LearnSalt/learn-file-managed.txt
 
 {% endif %}
 
