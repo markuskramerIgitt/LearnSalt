@@ -3,7 +3,9 @@
 ### 
 ###  Requires    c:/apps/magni    directory on Windows Minion
 ###
-###
+###  Learn salt:// is relative to top.sls
+### 
+### 
 
 
 
