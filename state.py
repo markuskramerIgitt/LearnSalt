@@ -1752,6 +1752,7 @@ def event(tagmatch='*',
             __opts__['transport'],
             opts=__opts__,
             listen=True)
+    print ('markus1')
 
     while True:
         ret = sevent.get_event(full=True, auto_reconnect=True)
