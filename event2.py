@@ -1748,8 +1748,8 @@ def event(tagmatch='*',
     '''
     # Markus Salt configuration
     __opts__ = salt.config.minion_config('/etc/salt/master')
-    print ('__opts__    {}'.format(__opts__))
-    return
+    #print ('__opts__    {}'.format(__opts__))
+    #return
     sevent = salt.utils.event.get_event(
             node,
             sock_dir or __opts__['sock_dir'],
