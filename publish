@@ -1,0 +1,1 @@
+cp state2.py /usr/lib/python2.7/dist-packages/salt/modules/
