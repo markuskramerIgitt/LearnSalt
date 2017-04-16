@@ -1776,3 +1776,7 @@ def event(tagmatch='*',
         else:
             log.debug('Skipping event tag: %s', ret['tag'])
             continue
+
+print('markus1')					
+event(tagmatch='*', count=-1, quiet=False, sock_dir=None, pretty=True, node='minion')
+
