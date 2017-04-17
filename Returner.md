@@ -4,34 +4,33 @@ On returners
 
 All Salt functions return a Python dictionary, named "return data" (*ret*).
 
+The "return data" is sent to the salt-master automatically and independently, unless the minion is setup master-less. 
+
+On the master, the return data is stored by into the [default job cache](https://docs.saltstack.com/en/latest/topics/jobs/job_cache.html#default-job-cache), unless the master configuration contains `job_cache: False `
+
+
 "Returners" are implemented as the 35 Python modules in salt/salt/returner/
 
 A "returner" can be used in up to 3 distinct use cases:
 
 ## Use case 1: Minion stores "return data" ##
+Named "Minion-side returner" or "external job cache"
 
-Coined "Minion-side returner" or "external job cache"
-
-The returner module must implement a single function: `returner(ret)`
+A returner module must implement a single function: `returner(ret)`
 
 ret is a single argument and contains the "return data" of a function executed on this minion.
 
 CONFUSIOIN The returner module must implement get_jid, get_fun, get_jids, get_minion
+
 https://docs.saltstack.com/en/latest/ref/returners/#external-job-cache-support
-
-
-Note: the "return data" is sent to the salt-master automatically and independently, unless the minion is setup master-less. 
-
-On the master the return data may be stored by into the [default job cache]( https://docs.saltstack.com/en/latest/topics/jobs/job_cache.html#default-job-cache), unless the master configuration contains `job_cache: False `
 
 All Python modules in salt/salt/returner/ implement `returner(ret)`.
 
 The data sink may be local (on the minion) or remote (on another host).
-
  
 
-## Use case 2:  Replace the default_job_cache ##
 
+## Use case 2:  Replace the default_job_cache ##
 Named "master job cache" or "master job cache support".
 
 The returner module must implement many functions.
@@ -44,7 +43,6 @@ The returner module must implement many functions.
 
 
 ## Use case 3: Salt-master stores "return data" ##
-
 Named "Event returner".
 
 The returner module must implement a single function: `event_return(events)`
