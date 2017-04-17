@@ -4,9 +4,9 @@ On returners
 
 All Salt functions return a Python dictionary, named "return data" (*ret*).
 
-The "return data" is sent to the salt-master, unless the minion is setup master-less. 
+A minion sends all "return data" to the salt-master, unless the minion is setup master-less. 
 
-On the master, the return data is stored by into the [default job cache](https://docs.saltstack.com/en/latest/topics/jobs/job_cache.html#default-job-cache), unless the master configuration contains `job_cache: False `
+The master stores all "return data" into the [default job cache](https://docs.saltstack.com/en/latest/topics/jobs/job_cache.html#default-job-cache), unless the master configuration contains `job_cache: False `
 
 
 "Returners" are implemented as the 35 Python modules in salt/salt/returner/
@@ -20,13 +20,11 @@ A returner module must implement a single function: `returner(ret)`
 
 ret is a single argument and contains the "return data" of a function executed on this minion.
 
-CONFUSIOIN The returner module must implement get_jid, get_fun, get_jids, get_minion
-
-https://docs.saltstack.com/en/latest/ref/returners/#external-job-cache-support
+[CONFUSIOIN The returner module must implement get_jid, get_fun, get_jids, get_minion?](https://docs.saltstack.com/en/latest/ref/returners/#external-job-cache-support)
 
 All Python modules in salt/salt/returner/ implement `returner(ret)`.
 
-The data sink may be local (on the minion) or remote (on another host).
+The data sink may be on the minion on another host.
  
 
 
@@ -62,9 +60,7 @@ You must have restarted the salt-master since then
   `service salt-master restart`
 
 After you execute a command,
-
   `salt bob test.version`
-
 You find the event data in file `/var/log/salt/events`
 
 12 of 35 Python modules in salt/salt/returner/ implement ` event_return(events)`. Redis not.
