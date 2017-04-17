@@ -5,6 +5,7 @@ On returners
 All Salt function return data, coined "return data".
 
 "Returners" are implemented as the 35 Python modules in salt/salt/returner/
+
 A "returner" can be used in up to 3 distinct use cases:
 
 **Use case 1: Minion stores "return data"**
@@ -12,6 +13,7 @@ A "returner" can be used in up to 3 distinct use cases:
 Coined "Minion-side returner" or "external job cache"
 
 The returner module must implement a single function: `returner(ret)`
+
 ret is a single argument and contains the "return data" of a function executed on this minion.
 
 CONFUSIOIN The returner module must implement get_jid, get_fun, get_jids, get_minion
@@ -19,6 +21,7 @@ https://docs.saltstack.com/en/latest/ref/returners/#external-job-cache-support
 
 
 Note: the "return data" is sent to the salt-master automatically and independently, unless the minion is setup master-less. 
+
 On the master the return data may be stored by into the [default job cache]( https://docs.saltstack.com/en/latest/topics/jobs/job_cache.html#default-job-cache), unless the master configuration contains `job_cache: False `
 
 All Python modules in salt/salt/returner/ implement `returner(ret)`.
@@ -40,11 +43,14 @@ The returner module must implement many functions:
 
 
 
+
+
 **Use case 3: Salt-master  stores "return data"**
 
 Coined "Event returner".
 
 The returner module must implement a single function: `event_return(events)`
+
 Example: rawfile_json.py
 
 To enable, you must configure the master with the `event_return` property.
