@@ -2,13 +2,13 @@ On returners
 ====
 
 
-All Salt function return data, coined "return data".
+All Salt functions return data, coined "return data".
 
 "Returners" are implemented as the 35 Python modules in salt/salt/returner/
 
 A "returner" can be used in up to 3 distinct use cases:
 
-**Use case 1: Minion stores "return data"**
+## Use case 1: Minion stores "return data" ##
 
 Coined "Minion-side returner" or "external job cache"
 
@@ -30,7 +30,7 @@ The data sink may be local (on the minion) or remote (on another host).
 
  
 
-**Use case 2:  Replace the default_job_cache**
+## Use case 2:  Replace the default_job_cache ##
 
 Coined as "master job cache support" or "master job cache".
 
@@ -43,9 +43,7 @@ The returner module must implement many functions:
 
 
 
-
-
-**Use case 3: Salt-master  stores "return data"**
+## Use case 3: Salt-master  stores "return data" ##
 
 Coined "Event returner".
 
