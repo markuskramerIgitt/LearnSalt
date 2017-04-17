@@ -4,7 +4,7 @@ On returners
 
 All Salt functions return a Python dictionary, named "return data" (*ret*).
 
-The "return data" is sent to the salt-master automatically and independently, unless the minion is setup master-less. 
+The "return data" is sent to the salt-master, unless the minion is setup master-less. 
 
 On the master, the return data is stored by into the [default job cache](https://docs.saltstack.com/en/latest/topics/jobs/job_cache.html#default-job-cache), unless the master configuration contains `job_cache: False `
 
