@@ -53,7 +53,13 @@ To enable, you must configure the master with the `event_return` property.
 
 A File  matching /etc/salt/master.d/*.conf must contain the line
 
-  `event_return: rawfile_json`
+    event_return: rawfile_json
+
+And usefully
+
+    event_return_blacklist:
+      - salt/auth
+
 
 You must have restarted the salt-master since then
 
@@ -67,7 +73,9 @@ You find the event data in file `/var/log/salt/events`
 
  [This Documentation ]( https://docs.saltstack.com/en/latest/topics/jobs/external_cache.html) does not  mention  "Event returner".
  
-Warning: Setting `master_job_cache: rawfile_json` results in an error.
+Warning: Setting `master_job_cache: rawfile_json` results in an error. (Why?)
+
+Live-editing /usr/lib/python2.7/dist-packages/salt/returners/rawfile_json.py
 
 
 [See Documentation ]( https://docs.saltstack.com/en/latest/ref/returners/#event-returners)
