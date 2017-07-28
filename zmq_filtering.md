@@ -20,7 +20,7 @@ Restart the salt-minion service
 
 
 
-Master stop 1) 
+Master step 1) 
 
 Add line to file  /etc/salt/master.d/master.conf
 
