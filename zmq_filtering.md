@@ -1,6 +1,7 @@
 zmq_filtering
 
 
+
 Salt uses zeromq's pub/sub sockets. 
 By default, all publish jobs are sent to all minions and filtered minion side. 
 Zeromq does have publisher side filtering which can be enabled in salt using zmq_filtering.
