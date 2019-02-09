@@ -14,6 +14,7 @@ On Windows, why `salt-call` is not found?
 
 On the Server emacs /etc/salt/master.d/markus_saltmaster.conf
 
+```
 # Make the eventbus more silent
 # https://github.com/saltstack/salt/pull/45358
 auth_events: False
@@ -23,6 +24,7 @@ minion_data_cache_events: False
 log_level: error
 log_level_logfile: info
 
+```
 
 
 
