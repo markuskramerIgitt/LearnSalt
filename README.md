@@ -12,6 +12,15 @@ On Windows, why there is no command "salt"?
 On Windows, why `salt-call` is not found?
  - c:\salt is not in the PATH
 
+On the Server emacs /etc/salt/master.d/markus_saltmaster.conf
+
+# Make the eventbus more silent
+auth_events: False
+
+# Make the log more silent
+log_level: error
+log_level_logfile: info
+
 
 
 
