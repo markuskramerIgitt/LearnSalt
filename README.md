@@ -25,7 +25,27 @@ log_level: error
 log_level_logfile: info
 
 ```
+emacs /etc/salt/master.d/reactor.conf
+
+```
+
+#
+# After editing: systemctl restart salt-master
+#
+# One could use specific states but this would require to restart the server if one need a change programming.
+# By using a very generic states that simply stands for the event, one can reprogram without starting the salt-master
+#
+
+reactor:
+  - 'salt/minion/*/start':
+    - /srv/salt/minion_schedule_heartbeat_state.sls
 
 
+```
+emacs /srv/salt/minion_schedule_heartbeat_state.sls
 
+```
+    
 
+```
+  
