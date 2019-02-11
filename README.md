@@ -34,10 +34,24 @@ emacs /etc/salt/master.d/reactor.conf
 
 reactor:
   - 'salt/minion/*/start':
-    - /srv/salt/minion_schedule_heartbeat_state.sls
+    # - /srv/salt/minion_schedule_heartbeat_state.sls   // DONT: MUST BE A RENDER REACTION
+    - /srv/salt/reactor/minion_start_reactor.sls
 
 
 ```
+emacs /srv/salt/reactor/minion_start_reactor.sls
+
+```
+minion_start_reaction:
+  local.state.sls:
+    - tgt: {{ data.id }}
+    - arg: 
+      - minion_schedule_heartbeat_state
+
+
+```
+
+
 emacs /srv/salt/minion_schedule_heartbeat_state.sls
 
 ```
