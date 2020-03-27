@@ -23,4 +23,7 @@ With "master side filtering" (`zmq_filtering: True`) on the master and **all** m
 - The 20 minions respond to the job.
 - 19,980 minion will be unaware of the job, because they do not receive it.
 
+When the job is sent to a single minion by runner, you should/must 
+- set `zmq_filter: True` in all masters and minions.
+- set `skip_grains: True` in all masters. [Read](https://github.com/saltstack/salt/pull/53603/files)
 
