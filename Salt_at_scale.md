@@ -6,7 +6,7 @@ Salt uses ZMQ for comminication.
 
 The default settings includes `zmq_filtering: False`
 
-Current documentation on that setting is poor: 
+Documentation on that setting is: 
 - https://docs.saltstack.com/en/latest/topics/transports/zeromq.html
 
 > The pub channel is implemented using zeromq's pub/sub sockets. By default we don't use zeromq's filtering, which means that all publish jobs are sent to all minions and filtered minion side. Zeromq does have publisher side filtering which can be enabled in salt using zmq_filtering.
