@@ -13,6 +13,10 @@ Current documentation on that setting is poor:
 
 Warning: the setting **must** be changed on the master and (all) minions: if settings differ between master and minion they cannot communicate at all.
 
+Why no by default:
+- [Earlier? it limited which different targeting methods can be used](https://groups.google.com/forum/?utm_medium=email&utm_source=footer#!msg/salt-users/Uaz8k6alFaU/Cp12ZaCEDwAJ)
+- [Now? Allows publisher side minion match for use with zmq_filtering](https://github.com/saltstack/salt/pull/30518)
+
 Explanation with 10,000 minions on a bad network, you want to send a job to 20 of them.
 
 With "minion side filtering" (`zmq_filtering: False`) :
