@@ -12,7 +12,11 @@ new admin powershell
     cd .\pkg\windows\
     .\build_env_3.ps1
 
-if it hangs run again 
+when it hangs run again 
+
+it hangs on "Successfully installed CherryPy-17.4.1 ... zc.lockfile-2.0"
+
+why?
 
 new admin powershell
 
