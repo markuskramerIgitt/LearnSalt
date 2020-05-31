@@ -1,5 +1,16 @@
-## install minion from Git
+## Install minion from Git
 
+    git clone salt
+    git checkout 3000.2
+    ./build_env.ps1 
+
+if hangs run again new powershell
+
+    pip install -e .
+
+new powershell
+
+    salt-call --local test.ping
 
 ## On install salt-master on UNIX 
 
