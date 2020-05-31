@@ -1,5 +1,7 @@
+## install minion from Git
 
-## Advise for non UNIX experts
+
+## On install salt-master on UNIX 
 
 ### Leave file `/etc/salt/master` unchanged
 
