@@ -7,7 +7,8 @@ new admin powershell
 
     git clone salt
     git checkout 3000.2
-    ./build_env.ps1 
+    cd .\pkg\windows\
+    .\build_env.ps1 
 
 if it hangs run again 
 
