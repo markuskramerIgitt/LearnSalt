@@ -12,24 +12,18 @@ new admin powershell
     Set-MpPreference -DisableRealtimeMonitoring $true
     cd .\pkg\windows\
     .\build_env_3.ps1
-
-when it hangs run again 
-
-it hangs on "Successfully installed CherryPy-17.4.1 ... zc.lockfile-2.0"
-
-why?
-
-new admin powershell
-
-    Set-ExecutionPolicy RemoteSigned
-    Set-MpPreference -DisableRealtimeMonitoring $true    
-    pip install -e .
     Set-MpPreference -DisableRealtimeMonitoring $false
 
+You must run .\build_env_3.ps1 twice:
+- it hangs on "Successfully installed CherryPy-17.4.1 ... zc.lockfile-2.0"
+
 new admin powershell
 
-    Set-ExecutionPolicy RemoteSigned
-    PowerShell Set-MpPreference -DisableRealtimeMonitoring $false
+    pip install -e .
+    
+
+new admin powershell
+
     salt-call --local test.version
 
 ## On install salt-master on UNIX 
