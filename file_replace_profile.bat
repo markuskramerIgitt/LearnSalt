@@ -1,1 +1,1 @@
-python -m cProfile -s time -o file_replace_you2.prof /Python35/Scripts/salt-call --local file.replace /git/LearnSalt/file_replace.txt pattern="foo" repl="bar" backup=False
+python -m cProfile -o file_replace.prof /Python35/Scripts/salt-call --local file.replace /git/LearnSalt/file_replace.txt pattern="foo" repl="bar" backup=False
