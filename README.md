@@ -1,4 +1,4 @@
-## Install minion from Git
+## Install minion 3000.2 from Git
 
 
 new vm
