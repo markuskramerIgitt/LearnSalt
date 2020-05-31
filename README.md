@@ -5,6 +5,7 @@ new vm
 
 new admin powershell
 
+    Set-ExecutionPolicy RemoteSigned
     git clone salt
     git checkout 3000.2
     cd .\pkg\windows\
@@ -14,10 +15,12 @@ if it hangs run again
 
 new admin powershell
 
+    Set-ExecutionPolicy RemoteSigned
     pip install -e .
 
 new admin powershell
 
+    Set-ExecutionPolicy RemoteSigned
     salt-call --local test.version
 
 ## On install salt-master on UNIX 
