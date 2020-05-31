@@ -5,10 +5,11 @@ new vm
 
 new admin powershell
 
-    Set-ExecutionPolicy RemoteSigned
-    PowerShell Set-MpPreference -DisableRealtimeMonitoring $true
     git clone salt
     git checkout 3000.2
+
+    Set-ExecutionPolicy RemoteSigned
+    Set-MpPreference -DisableRealtimeMonitoring $true
     cd .\pkg\windows\
     .\build_env_3.ps1
 
@@ -21,8 +22,9 @@ why?
 new admin powershell
 
     Set-ExecutionPolicy RemoteSigned
-    PowerShell Set-MpPreference -DisableRealtimeMonitoring $true    
+    Set-MpPreference -DisableRealtimeMonitoring $true    
     pip install -e .
+    Set-MpPreference -DisableRealtimeMonitoring $false
 
 new admin powershell
 
