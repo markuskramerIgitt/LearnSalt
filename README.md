@@ -1,49 +1,23 @@
-## Profiling
+## Profiling   100% CPU for 11 seconds
 
-    salt-call --local file.replace /git/LearnSalt/file_replace.txt pattern="you2" repl="you3" backup=False
+CLI
 
-11 seconds  100% CPU 
+    salt-call --local file.replace /git/LearnSalt/file_replace.txt pattern="foo" repl="bar" backup=False
 
-https://stackoverflow.com/questions/582336/how-can-you-profile-a-python-script
-
-
-### Visualize with snakeviz (results in webpage)
+Profile
 
     pip install snakeviz
-    
+    file_replace_profile.bat
+    snakeviz file_replace.prof
 
+Click on esxi.py:
+- Cumulative time 69%
+- File: c:\git\salt\salt\grains\
 
-### Visualize with pycallgraph and graphviz (results in pdf)
-Download http://www.graphviz.org/download/ Environment  / Artifacts
-
-    set path=%path%;c:\apps\Graphviz\bin
-
-
-    pip install pycallgraph
-
-create c:\Python***\Scripts\pycallgraph.bat with:
-    
-    @echo off
-    python "%~dpn0" %*
-
-
-
-Docs https://pycallgraph.readthedocs.io/en/master/
-
- 
-issue...
-
-    Executing: dot -Tpng -opycallgraph.png C:\Users\Markus\AppData\Local\Temp\tmprqpt9pl9
-    dot: graph is too large for cairo-renderer bitmaps. Scaling by 0.286175 to fit
-    Generated pycallgraph.png with 1494 nodes.
-
-...workaround
-    copy C:\Users\Markus\AppData\Local\Temp\tmp2dh9s6n7 asa
-    dot -T pdf -opycallgraph.pdf C:\Users\Markus\asa
-
+Assumption:
+- Finding esxi grains on Windows takes  100% CPU for 11 seconds
 
 ## Install minion 3000.2 from Git
-
 
 new vm
 
