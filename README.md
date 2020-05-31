@@ -14,8 +14,11 @@ new admin powershell
     .\build_env_3.ps1
     Set-MpPreference -DisableRealtimeMonitoring $false
 
-You must run .\build_env_3.ps1 twice:
+run .\build_env_3.ps1 twice:
 - it hangs on "Successfully installed CherryPy-17.4.1 ... zc.lockfile-2.0"
+
+ignore:
+- You are using pip version 9.0.1, however version 20.1.1 is available.
 
 new admin powershell
 
