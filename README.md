@@ -6,6 +6,19 @@
 
 https://stackoverflow.com/questions/582336/how-can-you-profile-a-python-script
 
+
+### Visualize with snakeviz (results in webpage)
+
+    pip install snakeviz
+    
+
+
+### Visualize with pycallgraph and graphviz (results in pdf)
+Download http://www.graphviz.org/download/ Environment  / Artifacts
+
+    set path=%path%;c:\apps\Graphviz\bin
+
+
     pip install pycallgraph
 
 create c:\Python***\Scripts\pycallgraph.bat with:
@@ -13,11 +26,6 @@ create c:\Python***\Scripts\pycallgraph.bat with:
     @echo off
     python "%~dpn0" %*
 
-
-### Maybe with graphviz
-Download http://www.graphviz.org/download/ Environment  / Artifacts
-
-    set path=%path%;c:\apps\Graphviz\bin
 
 
 Docs https://pycallgraph.readthedocs.io/en/master/
