@@ -6,18 +6,19 @@ https://stackoverflow.com/questions/582336/how-can-you-profile-a-python-script
 
     pip install pycallgraph
 
-create c:\Python27\Scripts\pycallgraph.bat with the following content:
+create c:\Python***\Scripts\pycallgraph.bat with:
     
     @echo off
     python "%~dpn0" %*
 
-set path=%path%;c:\apps\Graphviz\bin
+
+Download http://www.graphviz.org/download/ Environment  / Artifacts
+
+    set path=%path%;c:\apps\Graphviz\bin
 
 
 https://pycallgraph.readthedocs.io/en/master/
 
-
-    pycallgraph -v graphviz -- ./load_profiler_replace_using_python.py
 
 
 ## Install minion 3000.2 from Git
