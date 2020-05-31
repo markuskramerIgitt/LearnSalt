@@ -1,3 +1,25 @@
+## Profiling
+
+    salt-call --local file.replace /git/LearnSalt/load_profiler_replace.txt pattern="you2" repl="you3" backup=False
+
+https://stackoverflow.com/questions/582336/how-can-you-profile-a-python-script
+
+    pip install pycallgraph
+
+create c:\Python27\Scripts\pycallgraph.bat with the following content:
+    
+    @echo off
+    python "%~dpn0" %*
+
+set path=%path%;c:\apps\Graphviz\bin
+
+
+https://pycallgraph.readthedocs.io/en/master/
+
+
+    pycallgraph -v graphviz -- ./load_profiler_replace_using_python.py
+
+
 ## Install minion 3000.2 from Git
 
 
