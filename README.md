@@ -31,7 +31,7 @@ issue...
 
 ...workaround
     copy C:\Users\Markus\AppData\Local\Temp\tmp2dh9s6n7 asa
-    dot -Tsvg -opycallgraph.svg C:\Users\Markus\asa
+    dot -T pdf -opycallgraph.pdf C:\Users\Markus\asa
 
 
 ## Install minion 3000.2 from Git
