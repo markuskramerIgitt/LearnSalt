@@ -1,6 +1,6 @@
 ## Profiling
 
-    salt-call --local file.replace /git/LearnSalt/load_profiler_replace.txt pattern="you2" repl="you3" backup=False
+    salt-call --local file.replace /git/LearnSalt/file_replace.txt pattern="you2" repl="you3" backup=False
 
 11 seconds  100% CPU 
 
