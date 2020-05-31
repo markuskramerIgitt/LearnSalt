@@ -3,7 +3,7 @@
 
 new vm
 
-new powershell
+new admin powershell
 
     git clone salt
     git checkout 3000.2
@@ -11,11 +11,11 @@ new powershell
 
 if it hangs run again 
 
-new powershell
+new admin powershell
 
     pip install -e .
 
-new powershell
+new admin powershell
 
     salt-call --local test.version
 
