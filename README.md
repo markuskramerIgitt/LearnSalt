@@ -1,7 +1,3 @@
-Space to assemble documentation pull requests.
-
-
-
 
 ## Advise for non UNIX experts
 
