@@ -6,6 +6,7 @@ new vm
 new admin powershell
 
     Set-ExecutionPolicy RemoteSigned
+    PowerShell Set-MpPreference -DisableRealtimeMonitoring $true
     git clone salt
     git checkout 3000.2
     cd .\pkg\windows\
@@ -16,11 +17,13 @@ if it hangs run again
 new admin powershell
 
     Set-ExecutionPolicy RemoteSigned
+    PowerShell Set-MpPreference -DisableRealtimeMonitoring $true    
     pip install -e .
 
 new admin powershell
 
     Set-ExecutionPolicy RemoteSigned
+    PowerShell Set-MpPreference -DisableRealtimeMonitoring $false
     salt-call --local test.version
 
 ## On install salt-master on UNIX 
