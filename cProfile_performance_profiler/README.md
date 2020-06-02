@@ -32,7 +32,7 @@ Click on esxi.py and read:
 
 ## Remedy / Quick fix
 
-Remove grains that are not Windows related and do not behave on Windows like zfs:
+Removed grains that are not Windows related and do not behave on Windows like zfs does by detecting Windows:
 
 ```
 
@@ -49,8 +49,10 @@ def __virtual__():
 
 ```
 
-These Grains removed (and clean -fxd), time is down from 15 to 7 seconds:
+After these Grains removed (and clean -fxd), time is down from 15 to 7 seconds:
 
+
+```
 $ git status
 On branch 3000.2
 Your branch is up to date with 'upstream/3000.2'.
