@@ -11,6 +11,12 @@ This is a candidate for profiling.
 
     python -m cProfile -o file_replace.prof /Python35/Scripts/salt-call --local file.replace /git/LearnSalt/cProfile_performance_profiler/file_replace.txt pattern="foo" repl="bar" backup=False
 
+**Profile on CLI of physical host**
+
+    C:\Python35\Scripts>\Python35\python.exe -m cProfile -o test0.prof /Python35/Scripts/salt-call --local test.ping
+    C:\Python35\Scripts>snakeviz test0.prof
+
+
 **Step by step instructions**
 
 [Install minion 3000.2 from Git](https://github.com/markuskramerIgitt/LearnSalt)
