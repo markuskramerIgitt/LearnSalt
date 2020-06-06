@@ -1,0 +1,62 @@
+[DEBUG   ] Reading configuration from c:\salt\conf\minion
+[DEBUG   ] Including configuration from 'c:\salt\conf\minion.d\_schedule.conf'
+[DEBUG   ] Reading configuration from c:\salt\conf\minion.d\_schedule.conf
+[TRACE   ] The required configuration section, 'fluent_handler', was not found the in the configuration. Not loading the fluent logging handlers module.
+[TRACE   ] None of the required configuration sections, 'logstash_udp_handler' and 'logstash_zmq_handler', were found in the configuration. Not loading the Logstash logging handlers module.
+[DEBUG   ] Configuration file path: c:\salt\conf\minion
+[WARNING ] Insecure logging configuration detected! Sensitive data may be logged.
+[DEBUG   ] Grains refresh requested. Refreshing grains.
+[DEBUG   ] Reading configuration from c:\salt\conf\minion
+[DEBUG   ] Including configuration from 'c:\salt\conf\minion.d\_schedule.conf'
+[DEBUG   ] Reading configuration from c:\salt\conf\minion.d\_schedule.conf
+[TRACE   ] 'dig' could not be found in the following search path: '['C:\\Windows\\system32', 'C:\\Windows', 'C:\\Windows\\System32\\Wbem', 'C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\', 'C:\\Windows\\System32\\OpenSSH\\', 'C:\\apps\\Git\\cmd', 'C:\\Program Files (x86)\\Gpg4win\\..\\GnuPG\\bin', 'C:\\Users\\Markus\\AppData\\Local\\Microsoft\\WindowsApps', 'C:\\Users\\Markus\\AppData\\Local\\Programs\\Microsoft VS Code\\bin', 'c:\\python35\\lib\\site-packages\\pywin32_system32']'
+[TRACE   ] 'drill' could not be found in the following search path: '['C:\\Windows\\system32', 'C:\\Windows', 'C:\\Windows\\System32\\Wbem', 'C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\', 'C:\\Windows\\System32\\OpenSSH\\', 'C:\\apps\\Git\\cmd', 'C:\\Program Files (x86)\\Gpg4win\\..\\GnuPG\\bin', 'C:\\Users\\Markus\\AppData\\Local\\Microsoft\\WindowsApps', 'C:\\Users\\Markus\\AppData\\Local\\Programs\\Microsoft VS Code\\bin', 'c:\\python35\\lib\\site-packages\\pywin32_system32']'
+[TRACE   ] 'host' could not be found in the following search path: '['C:\\Windows\\system32', 'C:\\Windows', 'C:\\Windows\\System32\\Wbem', 'C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\', 'C:\\Windows\\System32\\OpenSSH\\', 'C:\\apps\\Git\\cmd', 'C:\\Program Files (x86)\\Gpg4win\\..\\GnuPG\\bin', 'C:\\Users\\Markus\\AppData\\Local\\Microsoft\\WindowsApps', 'C:\\Users\\Markus\\AppData\\Local\\Programs\\Microsoft VS Code\\bin', 'c:\\python35\\lib\\site-packages\\pywin32_system32']'
+[TRACE   ] Error loading grains.napalm: "napalm"" (c:\git\salt\salt\grains\napalm.py) cannot be loaded: NAPALM is not installed: ``pip install napalm``
+[TRACE   ] Error loading grains.zfs: ZFS: Not available on Windows
+[TRACE   ] Loading core.append_domain grain
+[TRACE   ] Loading core.cwd grain
+[TRACE   ] Loading core.default_gateway grain
+[TRACE   ] 'ip' could not be found in the following search path: '['C:\\Windows\\system32', 'C:\\Windows', 'C:\\Windows\\System32\\Wbem', 'C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\', 'C:\\Windows\\System32\\OpenSSH\\', 'C:\\apps\\Git\\cmd', 'C:\\Program Files (x86)\\Gpg4win\\..\\GnuPG\\bin', 'C:\\Users\\Markus\\AppData\\Local\\Microsoft\\WindowsApps', 'C:\\Users\\Markus\\AppData\\Local\\Programs\\Microsoft VS Code\\bin', 'c:\\python35\\lib\\site-packages\\pywin32_system32']'
+[TRACE   ] Loading core.dns grain
+[TRACE   ] Loading core.fqdns grain
+[TRACE   ] Loading core.get_machine_id grain
+[TRACE   ] Loading core.get_master grain
+[TRACE   ] Loading core.get_server_id grain
+[TRACE   ] Loading core.hostname grain
+[TRACE   ] Loading core.hwaddr_interfaces grain
+[TRACE   ] Loading core.id_ grain
+[TRACE   ] Loading core.ip4_interfaces grain
+[TRACE   ] Loading core.ip6_interfaces grain
+[TRACE   ] Loading core.ip_fqdn grain
+[TRACE   ] Loading core.ip_interfaces grain
+[TRACE   ] Loading core.linux_distribution grain
+[TRACE   ] Loading core.locale_info grain
+[TRACE   ] Loading core.os_data grain
+[TRACE   ] Loading core.path grain
+[TRACE   ] Loading core.pythonexecutable grain
+[TRACE   ] Loading core.pythonpath grain
+[TRACE   ] Loading core.pythonversion grain
+[TRACE   ] Loading core.saltpath grain
+[TRACE   ] Loading core.saltversion grain
+[TRACE   ] Loading core.saltversioninfo grain
+[TRACE   ] Loading core.zmqversion grain
+[TRACE   ] Loading disks.disks grain
+[TRACE   ] Device \\.\PhysicalDrive0 reports itself as an SSD
+[TRACE   ] Loading extra.config grain
+[TRACE   ] Loading extra.shell grain
+[TRACE   ] Loading mdadm.mdadm grain
+[TRACE   ] Loading minion_process.grains grain
+[TRACE   ] Loading opts.opts grain
+[DEBUG   ] Determining pillar cache
+[DEBUG   ] LazyLoaded jinja.render
+[DEBUG   ] LazyLoaded yaml.render
+[DEBUG   ] LazyLoaded jinja.render
+[DEBUG   ] LazyLoaded yaml.render
+[TRACE   ] Depends decorator instantiated with dep list of ('non_existantmodulename',) and kwargs {}
+[TRACE   ] Unloading test.missing_func because dependency (non_existantmodulename) is not met
+[DEBUG   ] LazyLoaded test.ping
+[DEBUG   ] LazyLoaded direct_call.execute
+[DEBUG   ] test.ping received for minion 'bob'
+[DEBUG   ] LazyLoaded nested.output
+[TRACE   ] data = {'local': True}
