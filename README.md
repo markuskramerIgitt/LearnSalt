@@ -10,10 +10,8 @@ new admin powershell
     git checkout v3001
 
     Set-ExecutionPolicy RemoteSigned
-    Set-MpPreference -DisableRealtimeMonitoring $true
     cd .\pkg\windows\
     .\build_env_3.ps1
-    Set-MpPreference -DisableRealtimeMonitoring $false
 
 run .\build_env_3.ps1 twice:
 - it hangs on "Successfully installed CherryPy-17.4.1 ... zc.lockfile-2.0"
