@@ -21,6 +21,7 @@ Ignore:
 
 New admin powershell
 
+    cd c:\git\salt
     pip install -e .
     
 
