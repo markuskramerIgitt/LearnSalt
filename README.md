@@ -27,6 +27,7 @@ New admin powershell
 
 New admin powershell
 
+    cd c:\git\salt
     salt-call --local test.version
 
 ## On install salt-master on UNIX 
