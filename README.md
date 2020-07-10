@@ -1,9 +1,9 @@
 
 ## Install minion 3000.2 from Git
 
-new vm
+New vm
 
-new admin powershell
+New admin powershell
 
     git clone salt
     git checkout 3000.2
@@ -11,20 +11,20 @@ new admin powershell
 
     Set-ExecutionPolicy RemoteSigned
     cd .\pkg\windows\
-    .\build_env_3.ps1
+    .\build_env.ps1
 
-run .\build_env_3.ps1 twice:
+Run .\build_env.ps1 twice:
 - it hangs on "Successfully installed CherryPy-17.4.1 ... zc.lockfile-2.0"
 
-ignore:
+Ignore:
 - You are using pip version 9.0.1, however version 20.1.1 is available.
 
-new admin powershell
+New admin powershell
 
     pip install -e .
     
 
-new admin powershell
+New admin powershell
 
     salt-call --local test.version
 
