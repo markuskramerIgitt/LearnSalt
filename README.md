@@ -7,6 +7,7 @@ new admin powershell
 
     git clone salt
     git checkout 3000.2
+    git checkout v3001
 
     Set-ExecutionPolicy RemoteSigned
     Set-MpPreference -DisableRealtimeMonitoring $true
