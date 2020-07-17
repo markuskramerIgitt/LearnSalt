@@ -13,11 +13,9 @@ Remove cache from previous build
     
     git clean -fxd
 
-Run .\build_env.ps1 twice:
-- it hangs on "Successfully installed CherryPy-17.4.1 ... zc.lockfile-2.0"
+Run .\build_env.ps1 twice, it hangs on "Successfully installed CherryPy-17.4.1 ... zc.lockfile-2.0"
 
-Ignore:
-- You are using pip version 9.0.1, however version 20.1.1 is available.
+Ignore: "You are using pip version 9.0.1, however version 20.1.1 is available"
 
     Set-ExecutionPolicy RemoteSigned
     cd .\pkg\windows\
