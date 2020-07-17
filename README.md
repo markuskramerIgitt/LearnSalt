@@ -8,16 +8,20 @@ New admin powershell
     git clone salt
     git checkout 3000.2
     git checkout v3001
-
-    Set-ExecutionPolicy RemoteSigned
-    cd .\pkg\windows\
-    .\build_env.ps1
+    
+Remove cache from previous build
+    
+    git clean -fxd
 
 Run .\build_env.ps1 twice:
 - it hangs on "Successfully installed CherryPy-17.4.1 ... zc.lockfile-2.0"
 
 Ignore:
 - You are using pip version 9.0.1, however version 20.1.1 is available.
+
+    Set-ExecutionPolicy RemoteSigned
+    cd .\pkg\windows\
+    .\build_env.ps1
 
 New admin powershell
 
