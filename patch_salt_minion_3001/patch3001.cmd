@@ -3,6 +3,7 @@ copy modules\cmdmod.py   c:\git\salt\salt\modules\cmdmod.py
 copy utils\chcp.py       c:\git\salt\salt\utils\chcp.py
 
 
+pause
 
 
 
