@@ -21,6 +21,8 @@ Run .\build_env_3.ps1 once or twice
 - It may hangs on "Successfully installed CherryPy-17.4.1 ... zc.lockfile-2.0"
 - "Installing visualcppbuildtools_full.exe" takes several 2 minutes 
 
+Execute
+
     Set-ExecutionPolicy RemoteSigned
     cd .\pkg\windows\
     .\build_env_3.ps1
