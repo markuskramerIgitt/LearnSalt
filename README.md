@@ -1,36 +1,48 @@
 
 ## Install minion 3000.2 from Git
 
-New vm
+Open a new admin powershell console
 
-New admin powershell
+Go to your salt git repo
 
-    git clone salt
-    git checkout 3000.2
-    git checkout v3001
+Checkout the tag 
+
+    git checkout v3000.2
+
+Verify `HEAD detached at v3000.2`
+ 
+    git status
     
-Remove cache from previous build
+Remove cache (__pycache__)  from previous build
     
     git clean -fxd
 
-Run .\build_env.ps1 twice, it hangs on "Successfully installed CherryPy-17.4.1 ... zc.lockfile-2.0"
-
-Ignore: "You are using pip version 9.0.1, however version 20.1.1 is available"
+Run .\build_env_3.ps1 once or twice
+- It may hangs on "Successfully installed CherryPy-17.4.1 ... zc.lockfile-2.0"
+- "Installing visualcppbuildtools_full.exe" takes several 2 minutes 
 
     Set-ExecutionPolicy RemoteSigned
     cd .\pkg\windows\
-    .\build_env.ps1
+    .\build_env_3.ps1
 
-New admin powershell
+Open a new admin powershell console!
+
+Install salt (don't overlook the dot)
 
     cd c:\git\salt
     pip install -e .
     
+Open a new admin powershell console!
 
-New admin powershell
+Do a smoke test
 
     cd c:\git\salt
     salt-call --local test.version
+    
+    
+END OF  Install minion 3000.2 from Git
+    
+    
 
 ## On install salt-master on UNIX 
 
