@@ -21,6 +21,7 @@ This is a candidate for profiling.
 
 [Install minion 3000.2 from Git](https://github.com/markuskramerIgitt/LearnSalt)
 
+    cd \git\LearnSalt\cProfile_performance_profiler
     pip install snakeviz
     file_replace_profile.bat
     git checkout file_replace.txt
