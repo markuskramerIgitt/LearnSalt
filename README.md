@@ -30,7 +30,6 @@ Run .\build_env_3.ps1 once or twice
 
 Execute
 
-    Set-ExecutionPolicy RemoteSigned
     cd \git\salt\pkg\windows\
     .\build_env_3.ps1
 
