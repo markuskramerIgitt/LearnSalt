@@ -13,7 +13,7 @@ Verify `HEAD detached at v3000.2`
  
     git status
     
-Remove cache (__pycache__)  from previous build
+Remove cache (`__pycache__`)  from previous build
     
     git clean -fxd
 
